@@ -30,7 +30,7 @@ const Navbar = () => {
    
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href="#contact" target="_blank">Contact Us</GitHubButton>
+          <NavLink href="#contact" >Contact Us</NavLink>
         </ButtonContainer>
         {
           isOpen &&
@@ -48,7 +48,7 @@ const Navbar = () => {
               setIsOpen(!isOpen)
             }}>Projects</MobileLink>
       
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href="#contact" >Contact Us</GitHubButton>
+            <MobileLink style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href="#contact" >Contact Us</MobileLink>
           </MobileMenu>
         }
       </NavbarContainer>
